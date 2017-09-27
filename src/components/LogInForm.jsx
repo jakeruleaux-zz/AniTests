@@ -1,14 +1,14 @@
 import React from 'react';
-import Home from './Home';
 
 
 
-  const LogInForm = ({home, history}) => {
-  if(!home) {
+
+  const LogInForm = ({entered, history}) => {
+  if(!entered) {
     return(
       <div className="form">
         <input type="text" placeholder="log in"/>
-        <button onClick={() =>history.push('/home')}>enter</button>
+        <button onClick={() =>history.push('/entered')}>enter</button>
       </div>
     )
   } else {
