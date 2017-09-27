@@ -31,7 +31,7 @@ module.exports = {
 
   module: {
     rules: [
-    
+
         {
         test: /\.jsx?$/,
         loader: "babel-loader",
@@ -62,7 +62,14 @@ module.exports = {
       {
         test: resolve(__dirname, "src/styles/styles.css"),
         loader: 'css-loader'
-      }
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: [
+         'url-loader?limit=10000'
+        ]
+
+      },
     ]
   },
 
