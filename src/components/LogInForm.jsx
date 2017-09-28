@@ -14,7 +14,7 @@ import React from 'react';
   } else {
     return (
       <div className="form">
-        <button onClick={() => history.push('/')}> Try </button>
+        <button onClick={() => history.push('/')}></button>
       </div>
     )
   }

@@ -6,7 +6,7 @@ class Entered extends React.Component {
   render(){
     return (
       <div className = {styles.userinput}>
-        <p>you logged in</p>
+        <p>Welcome</p>
         <LogInForm entered={true} {...this.props}/>
       </div>
     )

@@ -10,7 +10,6 @@ class App extends React.Component {
     return (
       <div>
         <Home />
-        <h2>App!</h2>
       </div>
     );
   }
